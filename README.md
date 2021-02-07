@@ -3,12 +3,8 @@ FNFBot is a [FridayNightFunkin](https://ninja-muffin24.itch.io/funkin) bot that 
 
 I simply did this just because I thought it would be fun.
 
-# WHAT ARE THESE ARROWS IN THE CONSOLE?
-
-These arrows are what the program see's (sometimes notes dont show up but its more or less what it is)
-
-The arrows are, well. Arrows of course.
-`H` repersents a note that must be held.
+# Discord Server
+we now have a [Discord Server](https://discord.gg/xKzF7tKc6F) join if you need help, or if you just want to. I'm not gonna stop you.
 
 # PC Requirements
 Yes, this has PC Requirements because some people have a machine that was born in an oven at 365°F and loaded to perfection.
