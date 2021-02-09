@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
@@ -59,6 +60,11 @@ namespace FNFBot
             bool waitingStart = false;
             
             Console.WriteLine("hooking keyboard shit");
+
+            if (!File.Exists("settings.bot"))
+                File.WriteAllText("settings.bot", offset.ToString());
+            else
+                offset = int.Parse(File.ReadAllText("settings.bot"));
             
             LowLevelKeyboardHook kbh = new LowLevelKeyboardHook();
             kbh.OnKeyPressed += (sender, keys) =>
@@ -78,15 +84,23 @@ namespace FNFBot
                         break;
                     case Keys.F3:
                         Console.WriteLine("offset: " + offset);
+                        File.WriteAllText("settings.bot",offset.ToString());
                         offset++;
                         break;
                     case Keys.F4:
                         Console.WriteLine("offset: " + offset);
+                        File.WriteAllText("settings.bot",offset.ToString());
                         offset--;
                         break;
                     case Keys.F5:
                         Console.WriteLine("Auto Start: " + !fpsPlus);
                         fpsPlus = !fpsPlus;
+                        break;
+                    case Keys.F6:
+                        Console.WriteLine("precise offset:");
+                        string off = Console.ReadLine();
+                        File.WriteAllText("settings.bot",off);
+                        offset = int.Parse(off);
                         break;
                 }
             };

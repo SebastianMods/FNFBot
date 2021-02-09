@@ -1,10 +1,26 @@
 # FNFBot
-FNFBot is a [FridayNightFunkin](https://ninja-muffin24.itch.io/funkin) bot that plays charts with the challenge of not being able to access/modify any of the games memory!
+FNFBot is a [FridayNightFunkin](https://ninja-muffin24.itch.io/funkin) bot that plays charts pretty good.
 
 I simply did this just because I thought it would be fun.
 
+# Discord Server
+we now have a [Discord Server](https://discord.gg/xKzF7tKc6F) join if you need help, or if you just want to. I'm not gonna stop you.
+
+# PC Requirements
+Yes, this has PC Requirements because some people have a machine that was born in an oven at 365°F and loaded to perfection.
+
+But seriously your pc should at least have:
+
+**8gb+ of ram**
+
+**Windows 10, or a linux distro with mono/wine**
+
+**A good cpu, at least a i5 6th generation+ (and what ever that is in amd terms)**
+
 # Showcase
-[![ytImage](https://img.youtube.com/vi/yFKJskWfiG8/0.jpg)](https://www.youtube.com/watch?v=yFKJskWfiG8)
+[![ytImage](https://img.youtube.com/vi/j5tuXc9yUCY/0.jpg)](https://www.youtube.com/watch?v=j5tuXc9yUCY)
+
+[![ytImage](https://img.youtube.com/vi/maS_rtQoqCk/0.jpg)](https://www.youtube.com/watch?v=maS_rtQoqCk)
 
 # Usage
 To use it, go to the [latest release](https://github.com/KadeDev/FNFBot/releases/latest) and download it.
@@ -29,9 +45,11 @@ F4 - Remove by 1 to the offset (milliseconds between keypresses)
 So, obviously its not perfect.
 Here are the issues:
 
-- Having to time the notes (its a hard thing to get used too)
+- Sometimes it just doesn't hit notes????
 
 # Credits
 I used [rqnn's global C# keyboard hook](https://stackoverflow.com/a/46014022) and [Micheal Noonan's Input Simulator](https://github.com/michaelnoonan/inputsimulator) for input and output.
+
+I also now use [memory.dll](https://github.com/erfg12/memory.dll) for hooking into the game
 
 Go give them love.
